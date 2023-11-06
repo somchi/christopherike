@@ -7,7 +7,7 @@ import { Portfolio } from './components/sections/portfolio';
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="grid">
         <Banner />
         <About />
         <Services />

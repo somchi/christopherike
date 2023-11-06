@@ -1,12 +1,16 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Separator } from './separetor';
 import { Tabs } from '../_libs/enums';
 
-export const Menu = () => {
-  const [activeNav, setActiveNav] = useState<string>('home');
-
+export const Menu = ({
+  activeNav,
+  setActiveNav,
+}: {
+  activeNav: string;
+  setActiveNav: (activeNav: string) => void;
+}) => {
   const onClick = (e: any) => {
     const section = e.target.name;
     const elem = document.getElementById(section);
@@ -14,41 +18,6 @@ export const Menu = () => {
     elem.scrollIntoView({ behavior: 'smooth' });
     setActiveNav(section);
   };
-
-  const observerTabs = (observer: IntersectionObserver) => {
-    const home = document.querySelector('#home');
-    const about = document.querySelector('#about');
-    const services = document.querySelector('#services');
-    const portfolio = document.querySelector('#portfolio');
-    const client = document.querySelector('#client');
-    const contact = document.querySelector('#contact');
-    if (!home || !about || !services || !portfolio || !client || !contact)
-      return;
-    observer.observe(home);
-    observer.observe(about);
-    observer.observe(services);
-    observer.observe(portfolio);
-    observer.observe(client);
-    observer.observe(contact);
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const visibility = entry.isIntersecting;
-        if (visibility) {
-          setActiveNav(entry.target.id);
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 1.0,
-      }
-    );
-    observerTabs(observer);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div className="grid md:flex items-center md:gap-10 gap-2 font-medium text-lg">
