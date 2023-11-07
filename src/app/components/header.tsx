@@ -27,6 +27,13 @@ export const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (window) {
+      const scrollY = window.scrollY;
+      setScrollY(scrollY === 0 ? false : true);
+    }
+  }, []);
+
   const observerTabs = (observer: IntersectionObserver) => {
     const home = document.querySelector('#home');
     const about = document.querySelector('#about');
@@ -66,12 +73,7 @@ export const Header = () => {
       id="header"
       className="fixed top-0 z-20  w-full transition-all ease-in-out duration-500"
       style={{
-        backgroundColor:
-          typeof window === 'undefined'
-            ? '#212529'
-            : !scrollY
-            ? 'transparent'
-            : '#212529',
+        backgroundColor: !scrollY ? 'transparent' : '#212529',
       }}
     >
       <nav className="flex relative items-center h-20 justify-between">
@@ -86,9 +88,12 @@ export const Header = () => {
             setActiveNav={(nav) => setActiveNav(nav)}
           />
         </div>
-        <div className="flex gap-3 reltive">
-          <MobileNav />
-          <Linkedin color="white" strokeWidth={2} className="md:mr-20 mr-8" />
+        <div className="flex gap-3 reltive md:mr-20 mr-8">
+          <MobileNav
+            activeNav={activeNav}
+            setActiveNav={(nav) => setActiveNav(nav)}
+          />
+          {/* <Linkedin color="white" strokeWidth={2} className="md:mr-20 mr-8" /> */}
         </div>
       </nav>
     </header>

@@ -8,17 +8,16 @@ export const Services = forwardRef<
   return (
     <section
       id="services"
-      className="md:px-2 px-10 py-20 bg-gray-700 grid  justify-center"
+      className="md:px-5 px-10 py-20 bg-gray-700 grid justify-center"
       ref={ref}
     >
-      <div className="max-w-screen-2xl ">
-        {' '}
+      <div className="grid max-w-screen-2xl">
         <div className="grid items-center gap-2 justify-center mb-10">
           <h1 className="font-bold text-4xl text-center">My Services</h1>
           <div className="h-1 w-20 bg-green-400 justify-self-center flex"></div>
         </div>
         <div className="grid w-full md:justify-between md:flex-wrap md:flex gap-8 gap-y-8">
-          <div className="md:w-[48%] flex  flex-col gap-2">
+          <div className="md:w-[48%] flex flex-col gap-2">
             <h1 className="font-semibold text-2xl text-gray-300">
               Technical Writing
             </h1>

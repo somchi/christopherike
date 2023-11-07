@@ -3,7 +3,13 @@ import { Menu as Hamburger, X } from 'lucide-react';
 import { Menu } from './menu';
 import { useState } from 'react';
 
-export const MobileNav = () => {
+export const MobileNav = ({
+  activeNav,
+  setActiveNav,
+}: {
+  activeNav: string;
+  setActiveNav: (nav: string) => void;
+}) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   return (
     <>
@@ -20,7 +26,7 @@ export const MobileNav = () => {
           showMenu ? 'h-80 py-2' : 'h-0'
         }`}
       >
-        <Menu />
+        <Menu setActiveNav={setActiveNav} activeNav={activeNav} />
       </div>
       {/* ) : null} */}
     </>

@@ -8,7 +8,7 @@ export const About = forwardRef<
   return (
     <section
       id="about"
-      className="md:px-2 px-10 py-20 max-w-screen-2xl grid justify-self-center"
+      className="md:px-5 px-10 py-20 max-w-screen-2xl grid justify-self-center"
       ref={ref}
     >
       <div className="grid items-center gap-2 justify-center mb-10">
@@ -56,7 +56,7 @@ export const About = forwardRef<
           <div className="flex items-center">
             <p className="text-xl font-bold">Email: </p>&nbsp;&nbsp;
             <span className="text-xl font-medium text-green-400">
-              ikeebuka@gmail.com
+              hello@christopherike.com
             </span>
           </div>
           <Separator className="!bg-gray-600 my-3" />
