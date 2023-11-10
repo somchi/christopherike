@@ -6,3 +6,13 @@ export enum Tabs {
   Client = 'client',
   Contact = 'contact',
 }
+
+export enum AdminPages {
+  Home = 'home',
+  Service = 'service',
+  Skill = 'skill',
+  Design = 'design',
+  Video = 'video',
+  Review = 'review',
+  User = 'user',
+}

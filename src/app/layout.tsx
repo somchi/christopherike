@@ -19,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body id="root" className={`${montserrat.className}  bg-gray-800`}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

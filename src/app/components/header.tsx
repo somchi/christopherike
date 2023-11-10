@@ -88,7 +88,7 @@ export const Header = () => {
             setActiveNav={(nav) => setActiveNav(nav)}
           />
         </div>
-        <div className="flex gap-3 reltive md:mr-20 mr-8">
+        <div className="flex gap-3 md:mr-20 mr-8">
           <MobileNav
             activeNav={activeNav}
             setActiveNav={(nav) => setActiveNav(nav)}

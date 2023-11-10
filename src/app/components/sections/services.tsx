@@ -67,9 +67,9 @@ export const Services = forwardRef<
         <div className="mt-8">
           <h1 className="font-bold text-2xl">My Skills</h1>
           <div className="grid mt-4 w-full md:justify-between flex-wrap  md:flex gap-8 gap-y-8">
-            <Skill degree="80" />
-            <Skill degree="80" />
-            <Skill degree="80" />
+            <Skill degree="80" name="Photoshop" />
+            <Skill degree="80" name="Photoshop" />
+            <Skill degree="80" name="Photoshop" />
           </div>
         </div>
       </div>
