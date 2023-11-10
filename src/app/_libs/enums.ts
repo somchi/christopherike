@@ -15,4 +15,6 @@ export enum AdminPages {
   Video = 'video',
   Review = 'review',
   User = 'user',
+  Login = 'login',
+  ResetPassword = 'reset',
 }

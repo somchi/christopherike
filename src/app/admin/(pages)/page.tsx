@@ -1,9 +1,9 @@
-import { Designs } from './_components/sections/designs';
-import { Reviews } from './_components/sections/reviews';
-import { Services } from './_components/sections/services';
-import { Skills } from './_components/sections/skills';
-import { Users } from './_components/sections/users';
-import { Videos } from './_components/sections/video';
+import { Designs } from '../_components/sections/designs';
+import { Reviews } from '../_components/sections/reviews';
+import { Services } from '../_components/sections/services';
+import { Skills } from '../_components/sections/skills';
+import { Users } from '../_components/sections/users';
+import { Videos } from '../_components/sections/video';
 
 const AdminHome = () => {
   return (

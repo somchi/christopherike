@@ -46,3 +46,5 @@ export type Video = {
 export type AppStore = {
   activeTab: string;
 };
+
+export type FormFooter = { title: string; action: string; linkPath: string };
