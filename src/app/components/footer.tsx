@@ -7,7 +7,8 @@ export const Footer = () => {
         <span>Copyright </span>
         <Copyright />
         <span> {new Date().getFullYear()}</span>
-        <span className="text-green-400">Christopher</span>
+        <span className="text-green-400">Christopher Ike.</span>
+        <span>All Rights Reserved</span>
       </div>
     </footer>
   );
