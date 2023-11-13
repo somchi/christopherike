@@ -18,3 +18,7 @@ export enum AdminPages {
   Login = 'login',
   ResetPassword = 'reset',
 }
+export enum Role {
+  USER,
+  ADMIN,
+}

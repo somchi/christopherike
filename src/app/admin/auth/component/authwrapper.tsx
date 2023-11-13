@@ -10,7 +10,7 @@ type Props = {
 
 const AuthWrapper = ({ children, title, description, formFooter }: Props) => {
   return (
-    <div className="mt-10 rounded-md p-9 bg-gray-700  shadow-lg sm:mx-auto sm:w-full sm:max-w-md">
+    <div className="mt-10 rounded-md p-9 bg-gray-700 h-fit shadow-lg sm:mx-auto sm:w-full sm:max-w-md">
       <h2 className="text-xl font-bold leading-7 tracking-tight text-gray-300">
         {title}
       </h2>

@@ -5,5 +5,5 @@ type Props = {
 };
 
 export default function AdminLayout({ children }: Props) {
-  return <div className="text-gray-300">{children}</div>;
+  return <div className="grid items-center text-gray-300">{children}</div>;
 }

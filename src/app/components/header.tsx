@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Menu } from './menu';
-import { Linkedin } from 'lucide-react';
 import { MobileNav } from './mobile-nav';
 
 export const Header = () => {

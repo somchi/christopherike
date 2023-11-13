@@ -116,7 +116,7 @@ export const ResetPasswordForm = () => {
               </span>
             </div>
           </FormControl>
-          <FormControl>
+          <FormControl className="grid justify-center">
             <button className="rounded-full w-60 bg-green-600 text-white py-3 px-1 text-lg font-semibold">
               {load && <ButtonLoader />} Next
             </button>
